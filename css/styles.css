@@ -64,7 +64,7 @@ a {
 /* header */
 
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--secondary-background-btn-color);
 }
 
 .header-span {
@@ -147,6 +147,7 @@ a {
   text-align: center;
 }
 .hero-title {
+  padding-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -155,6 +156,11 @@ a {
   color: var(--secondary-title-color);
 }
 .hero-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
   background: var(--main-button-color);
   box-shadow: 0px 4px 4px var(--main-boxshadow-color);
   border-radius: 4px;
@@ -162,11 +168,11 @@ a {
   display: block;
   margin: 0 auto;
 }
+.hero-section-container {
+  padding-top: 188px;
+}
 .hero-container {
-  display: block;
-  max-width: 528px;
-  max-height: 120px;
-  margin: 0 auto;
+  max-width: 545px;
   text-align: center;
 }
 .hero-btn:focus,
@@ -188,12 +194,24 @@ a {
 }
 
 /* section2 */
-
+.section-2-container {
+  padding-top: 120px;
+  padding-bottom: 0;
+}
 .section-2-list {
+  display: flex;
 }
 .section-2-list-items {
+  padding-right: 24px;
+}
+.section-2-list-items:last-child {
+  padding-right: 0;
 }
 .section-2-list-title {
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+  padding-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -201,8 +219,9 @@ a {
   color: var(--main-title-color);
 }
 .section-2-list-text {
+  max-width: 264px;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--secondary-link-color);
 }
@@ -210,11 +229,19 @@ a {
 /* section3 */
 
 .section-3-title {
+  padding-top: 120px;
+  margin-bottom: 72px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+}
+.section-3-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 /* Our team */
@@ -223,6 +250,9 @@ a {
   background-color: var(--main-background-color);
 }
 .team-title {
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -231,10 +261,16 @@ a {
   color: var(--main-title-color);
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-object {
+  width: calc((100%- 72px) / 3);
+  padding-bottom: 120px;
 }
 .team-list-subtitle {
+  margin-bottom: 8px;
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -248,11 +284,23 @@ a {
   letter-spacing: 0.02em;
   color: var(--secondary-link-color);
 }
+.team-list-name {
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  padding: 32px;
+}
 
 /* footer */
 
 .footer {
   background-color: var(--main-title-color);
+  height: 310px;
+}
+.footer-container {
+  display: block;
+  padding-top: 100px;
 }
 .foooter-link {
   font-family: "Raleway";
@@ -264,6 +312,9 @@ a {
   color: var(--main-background-color);
 }
 .footer-description {
+  margin-top: 16px;
+  width: 264px;
+  display: block;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
