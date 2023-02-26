@@ -265,7 +265,7 @@ a {
   gap: 24px;
 }
 .team-list-object {
-  width: calc((100%- 72px) / 3);
+  width: calc((100% - 72px) / 3);
   padding-bottom: 120px;
 }
 .team-list-subtitle {
